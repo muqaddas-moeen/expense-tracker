@@ -12,7 +12,23 @@ class HomaPage extends StatefulWidget {
 }
 
 class _HomaPageState extends State<HomaPage> {
-  Expense expense = [];
+  List<Expense> registeredExpenses = [
+    Expense(
+        title: 'flutter exam 1',
+        amount: 2000.00,
+        date: DateTime.now(),
+        category: Category.work),
+    Expense(
+        title: 'flutter exam 2',
+        amount: 2000.00,
+        date: DateTime.now(),
+        category: Category.work),
+    Expense(
+        title: 'flutter exam 3',
+        amount: 2000.00,
+        date: DateTime.now(),
+        category: Category.work),
+  ];
 
   @override
   Widget build(BuildContext context) {
